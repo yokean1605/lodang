@@ -68,16 +68,7 @@
 						<div class="col-2">
 							<a class="navbar-brand" href="#">Navbar</a>
 						</div>
-						<div class="col-8 d-flex">
-							<div class="btn bg-transparent icon-kategori">
-								<i class="fas fa-grip-vertical text-primary"></i>
-							</div>
-							<select class="form-control border-0 mr-3" name="" id="" style="width: 125px;">
-							  <option value="">Kategori</option>
-							  <option value="">Kartu Prakerja</option>
-							  <option value="">Mahir Telekomunikasi</option>
-							  <option value="">Hallo 1</option>
-							</select>
+						<div class="col-8">
 							<form class="d-flex my-2 my-lg-0 form-search-header">
 								<div class="input-icon w-100">
 									<input class="form-control mr-sm-2" type="text" placeholder="Temukan Barang Anda disini">
@@ -134,43 +125,22 @@
 				</div>
 				<!-- banner -->
 				<div class="p-3 shadow mt-5 kategori-pilihan">
-					<h5 class="mb-3">Kategori Pilihan</h5>
+					<div class="header-kategori d-flex">
+						<h5 class="mb-3">Kategori</h5>
+						<a href="" class="ml-auto">Semua Kategori</a>
+					</div>
 					<div class="banner-slider my-3 scrollable">
 						<a href="" class="btn btn-kategori m-2">
-							Kategori 1
+							<img src="images/food.svg" alt="" class="img-fluid">
+							Makanan
 						</a>
 						<a href="" class="btn btn-kategori m-2">
-							Kategori 2
+							<img src="images/drink.svg" alt="" class="img-fluid">
+							Minuman
 						</a>
 						<a href="" class="btn btn-kategori m-2">
-							Kategori 3
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							Kategori 4
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							Kategori 5
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							Kategori 6
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							Kategori 7
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							Kategori 8
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							Kategori 9
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							Kategori 10
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							Kategori 11
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							Kategori 12
+							<img src="images/fast-food.svg" alt="" class="img-fluid">
+							Fast Food
 						</a>
 					</div>
 				</div>
@@ -180,6 +150,18 @@
 		<!-- main -->
 		<section class="main my-5">
 			<div class="container">
+				<h3>Produk Dari Kami</h3>
+				<div class="filters text-center">
+					<ul class="list-menus list-inline">
+						<li class="list-inline-item" data-filter="*"></li>
+						<li class="list-inline-item active" data-filter=".dapur">Dapur</li>
+						<li class="list-inline-item" data-filter=".elektronik">Elektrik</li>
+						<li class="list-inline-item" data-filter=".bayi">Perlengkapan Bayi</li>
+						<li class="list-inline-item" data-filter=".kesehatan">Kesehatan</li>
+						<li class="list-inline-item" data-filter=".kecantikan">Kecantikan</li>
+						<!-- <li class="list-inline-item" data-filter=".group">GROUP</li> -->
+					</ul>
+				</div>
 				<div class="row">
 					<div class="col-sm-3 col-6">
 						<div class="card mb-3 item-produk">
@@ -511,6 +493,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src="vendor/bootstrap/js/bootstrap.min.js" ></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
 		<script src="js/lodang.min.js"></script>
 	</body>
 </html>

@@ -84,7 +84,34 @@ ul.star {
 }
 
 .btn-kategori {
-  background-color: rgb(52, 59, 106) !important;
+  background-color: #4e56f3 !important;
+  background-image: linear-gradient(to right, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
+  transition: all 0.4s ease-in-out !important;
+  background-size: 300% 100% !important;
   color: white;
   border-radius: 8px;
+}
+
+.filters {
+  .list-menus {
+    li {
+      color: #357fef;
+      border: 2px solid #fff;
+      background-color: #fff;
+      transition: all 500ms;
+      background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, #357fef 50%, var(#357fef) 100%);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 90px 180px;
+    }
+  }
+}
+
+.btn-kategori {
+  display: flex;
+  >img {
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+  }
 }
