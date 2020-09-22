@@ -94,6 +94,10 @@ ul.star li .fas {
   font-weight: normal;
 }
 
+.shadow {
+  box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
+}
+
 section.navigation {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
   background-color: #FFFFFF;
@@ -143,4 +147,8 @@ section.navigation .list-icon-header li a {
 
 .icon-kategori i {
   font-size: 20px;
+}
+
+.kategori-pilihan {
+  border-radius: 8px;
 }
