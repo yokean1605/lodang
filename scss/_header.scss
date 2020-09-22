@@ -1,0 +1,43 @@
+section.navigation {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+    background-color: #FFFFFF;
+    .nav-top {
+        background-color: #ededed;
+        color: rgb(129, 119, 119)!important;
+        font-size: 12px;
+        .ul-medsos li a, .ul-auth li a{
+            color: $c-navtop;
+        }
+        
+    }
+    .list-icon-header li a{
+        margin: 0 10px;
+        color: #357fef;
+        font-size: 20px;
+    }
+}
+.form-search-header {
+    width: 100%;
+    .input-icon{
+        display: flex;
+        position: relative;
+        >input {
+            border-radius: 25px;
+        }
+        i {
+            position: absolute;
+            right: 25px;
+            top: 12px;
+            background-color: white;
+        }
+    }
+}
+
+.icon-kategori {
+    position: absolute;
+    left: -20px;
+    top: 3px;
+    i {
+        font-size: 20px;
+    }
+}
