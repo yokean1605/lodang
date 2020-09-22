@@ -98,6 +98,12 @@ ul.star li .fas {
   box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
 }
 
+.btn-kategori {
+  background-color: #343b6a !important;
+  color: white;
+  border-radius: 8px;
+}
+
 section.navigation {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
   background-color: #FFFFFF;
