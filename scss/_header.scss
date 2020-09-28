@@ -16,7 +16,28 @@ section.navigation {
         font-size: 20px;
     }
 }
+
+.form-mobile {
+    >input {
+        border-radius: 14px;
+        border-right: none;
+    }
+    >.input-group-append span{
+        border-radius: 14px;
+        background-color: transparent;
+        border-left: none;
+    }
+}
+
+.mobile {
+    > .list-icon-header li a{
+        margin: 0 5px !important;
+        font-size: 12px !important;
+    }
+}
+
 .form-search-header {
+    display: flex;
     width: 100%;
     .input-icon{
         display: flex;

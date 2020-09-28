@@ -25,6 +25,10 @@ p a {
   text-decoration: underline;
 }
 
+.dc-flex {
+  display: flex;
+}
+
 h1,
 h2,
 h3,
@@ -100,12 +104,26 @@ ul.star li .fas {
 }
 
 .btn-kategori {
-  background-color: #4e56f3 !important;
-  background-image: linear-gradient(to right, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
-  transition: all 0.4s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
   background-size: 300% 100% !important;
   color: white;
   border-radius: 8px;
+  border: 1px solid #4e56f3;
+  color: #4e56f3;
+  min-width: 200px;
+}
+
+.btn-kategori.active, .btn-kategori:hover {
+  color: white;
+  background-color: #4e56f3 !important;
+  background-image: linear-gradient(to right, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
+}
+
+.btn-kategori img {
+  padding-top: 15px;
+  display: block;
+  margin: 0 auto;
+  width: 50px;
 }
 
 .filters .list-menus li {
@@ -117,16 +135,6 @@ ul.star li .fas {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 90px 180px;
-}
-
-.btn-kategori {
-  display: flex;
-}
-
-.btn-kategori > img {
-  width: 20px;
-  float: left;
-  margin-right: 5px;
 }
 
 section.navigation {
@@ -150,7 +158,24 @@ section.navigation .list-icon-header li a {
   font-size: 20px;
 }
 
+.form-mobile > input {
+  border-radius: 14px;
+  border-right: none;
+}
+
+.form-mobile > .input-group-append span {
+  border-radius: 14px;
+  background-color: transparent;
+  border-left: none;
+}
+
+.mobile > .list-icon-header li a {
+  margin: 0 5px !important;
+  font-size: 12px !important;
+}
+
 .form-search-header {
+  display: flex;
   width: 100%;
 }
 

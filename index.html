@@ -23,9 +23,29 @@
 			<div class="nav-top py-1">
 				<div class="container">
 					<div class="row">
-						<div class="col d-flex">
-							<span class="d-inline">Ikuti Kami</span>
-							<ul class="list-inline ml-3 mb-0 ul-medsos">
+						<!-- untuk device mobile -->
+						<div class="mobile d-block d-sm-none">
+							<ul class="list-inline mb-0 list-icon-header my-auto ml-3 d-flex">
+								<li class="list-inline-item">
+									<a href="" class="icon-shoping">
+										<i class="fas fa-heart"></i>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="" class="icon-shoping">
+										<i class="fas fa-shopping-cart"></i>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="" class="icon-shoping">
+										<i class="fas fa-bell"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- desktop -->
+						<div class="col dc-flex d-none d-sm-block">
+							<ul class="list-inline mr-auto mb-0 ul-medsos float-left">
 								<li class="list-inline-item">
 									<a href="">
 										<i class="fab fa-instagram"></i>
@@ -48,7 +68,8 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col d-flex">
+						<!-- sign in / sign up -->
+						<div class="col dc-flex">
 							<ul class="list-inline ml-auto mb-0 ul-auth">
 								<li class="list-inline-item">
 									<a href="">Masuk</a>
@@ -65,22 +86,35 @@
 			<nav class="nav-bottom py-3">
 				<div class="container">
 					<div class="row no-gutters">
-						<div class="col-2">
+						<div class="col-sm-2 col-4">
 							<a class="navbar-brand" href="#">
 								<img src="./images/logo.png" alt="" class="img-fluid">
 							</a>
 						</div>
 						<div class="col-8">
-							<form class="d-flex my-2 my-lg-0 form-search-header">
-								<div class="input-icon w-100">
-									<input class="form-control mr-sm-2" type="text" placeholder="Temukan Barang Anda disini">
-									<i class="fas fa-search"></i>
+							<!-- desktop -->
+							<div class="d-sm-block d-none">
+								<form class="my-2 my-lg-0 form-search-header">
+									<div class="input-icon w-100">
+										<input class="form-control mr-sm-2" type="text" placeholder="Temukan Barang Anda disini">
+										<i class="fas fa-search"></i>
+									</div>
+									<button class="btn btn-primary my-2 my-sm-0" type="submit">Cari</button>
+								</form>
+							</div>
+							<!-- mobile -->
+							<form action="" class="d-sm-none d-block">
+								<div class="input-group md-form form-sm form-2 pl-0 form-mobile">
+									<input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Cari disini">
+									<div class="input-group-append bg-transparent">
+										<span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+											aria-hidden="true"></i></span>
+									</div>
 								</div>
-								<button class="btn btn-outline-primary my-2 my-sm-0 border-0" type="submit">Search</button>
 							</form>
 						</div>
-						<div class="col-2 d-flex">
-							<ul class="list-inline mb-0 list-icon-header my-auto ml-auto">
+						<div class="col-2 d-none d-sm-block">
+							<ul class="list-inline mb-0 list-icon-header text-right d-flex my-1 float-right">
 								<li class="list-inline-item">
 									<a href="" class="icon-shoping">
 										<i class="fas fa-heart"></i>
@@ -104,6 +138,7 @@
 			</nav>
 		</section>
 
+		<!-- slider -->
 		<header class="" style="margin-top: 100px;">
 			<div class="container">
 				<!-- slider -->
@@ -126,23 +161,37 @@
 					</div>
 				</div>
 				<!-- banner -->
-				<div class="p-3 shadow mt-5 kategori-pilihan">
-					<div class="header-kategori d-flex">
-						<h5 class="mb-3">Kategori</h5>
-						<a href="" class="ml-auto">Semua Kategori</a>
-					</div>
+				<div class="mt-5 kategori-pilihan">
 					<div class="banner-slider my-3 scrollable">
-						<a href="" class="btn btn-kategori m-2">
+						<a href="" class="btn btn-kategori m-3 mb-4 shadow p-4 active">
+							All
+							<br>
+							Kategori
 							<img src="images/food.svg" alt="" class="img-fluid">
-							Makanan
 						</a>
-						<a href="" class="btn btn-kategori m-2">
+						<a href="" class="btn btn-kategori m-3 mb-4 shadow p-4">
+							Loding
+							<br>
+							( Lombok Branding) 
+							<img src="images/food.svg" alt="" class="img-fluid">
+						</a>
+						<a href="" class="btn btn-kategori m-3 mb-4 shadow p-4">
+							Lowis 
+							<br>
+							(Lombok Berwisata)
 							<img src="images/drink.svg" alt="" class="img-fluid">
-							Minuman
 						</a>
-						<a href="" class="btn btn-kategori m-2">
+						<a href="" class="btn btn-kategori m-3 mb-4 shadow p-4">
+							Lombok
+							<br>
+							Bersosial
 							<img src="images/fast-food.svg" alt="" class="img-fluid">
-							Fast Food
+						</a>
+						<a href="" class="btn btn-kategori m-3 mb-4 shadow p-4">
+							Lombok
+							<br>
+							Update
+							<img src="images/fast-food.svg" alt="" class="img-fluid">
 						</a>
 					</div>
 				</div>
@@ -414,7 +463,7 @@
 	 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio saepe iste voluptatum eveniet incidunt ut, laborum soluta. Corporis fuga dolorum vitae aliquid ducimus, quia cum doloribus necessitatibus. Deserunt, accusamus.
 							</p>
 						</div>
-						<div class="col-sm-2 col-6">
+						<div class="col-sm-2 col-12">
 							<div class="footer-item">
 								<div class="footer-title">
 									<h3 class="">Tentang</h3>
@@ -432,7 +481,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-sm-2 col-6">
+						<div class="col-sm-2 col-12">
 							<div class="footer-item">
 								<div class="footer-title">
 									<h3 class="">Ikuti Kami</h3>
@@ -453,7 +502,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-sm-2 col-6">
+						<div class="col-sm-2 col-12">
 							<div class="footer-item">
 								<div class="footer-title">
 									<h3 class="">Lainnya</h3>
@@ -471,7 +520,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-sm-3 col-6">
+						<div class="col-sm-3 col-12">
 							<div class="footer-item">
 								<div class="footer-title">
 									<h3 class="">Post Tags</h3>

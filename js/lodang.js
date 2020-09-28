@@ -6,7 +6,7 @@
     arrows: true,
     infinite: false,
     variableWidth: true,
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1
   });
 
