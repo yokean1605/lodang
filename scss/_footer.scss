@@ -1,0 +1,47 @@
+.footer-top {
+    // background-image: linear-gradient(#04185b, #1f357d);
+    background-image: linear-gradient(#0b2558, #05195c);
+    padding: 70px 0;
+    padding-bottom: 0px;
+    color: white;
+
+    .footer-title h3 {
+        color: white;
+        padding-bottom: 45px;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .footer-list {
+        li {
+            opacity: 0.8;
+            transition: 0.2s;
+            a {
+                font-weight: 300;
+                color: white;
+            }
+        }
+    }
+}
+
+.footer-btm {
+    background-color: #0b2558;
+    padding: 18px 0;
+    color: white;
+    font-weight: 400;
+}
+
+.ul-post-tags {
+    li {
+        float: left;
+        margin-right: 15px;
+        .btn-tags {
+            margin-bottom: 15px;
+            font-size: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.34) !important;
+            &:hover {
+                color: #0d2857;
+            }
+        }
+    }
+}
