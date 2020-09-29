@@ -14,6 +14,7 @@
 body {
   font-size: 0.875rem;
   font-family: 'Poppins', sans-serif;
+  background-color: #f7f8fb;
 }
 
 p {
@@ -39,15 +40,17 @@ h6 {
 }
 
 .item-produk {
-  border-radius: 8px;
+  border-radius: 30px;
   box-shadow: 0 3.2px 7.2px 0 rgba(0, 0, 0, 0.13);
 }
 
 .item-produk > .item-img {
   width: 100%;
   height: 190px;
-  -o-object-fit: contain;
-  object-fit: contain;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  -o-object-fit: cover;
+  object-fit: cover;
   margin-bottom: 15px;
 }
 
@@ -103,27 +106,59 @@ ul.star li .fas {
   box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
 }
 
-.btn-kategori {
+.btn-menus {
   transition: all 0.3s ease-in-out !important;
   background-size: 300% 100% !important;
   color: white;
   border-radius: 8px;
-  border: 1px solid #4e56f3;
   color: #4e56f3;
   min-width: 200px;
 }
 
-.btn-kategori.active, .btn-kategori:hover {
+.btn-menus.active, .btn-menus:hover {
   color: white;
   background-color: #4e56f3 !important;
   background-image: linear-gradient(to right, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
 }
 
-.btn-kategori img {
+.btn-menus img {
   padding-top: 15px;
   display: block;
   margin: 0 auto;
   width: 50px;
+}
+
+.btn-price {
+  color: white;
+  background-color: #4e56f3 !important;
+  background-image: linear-gradient(to right, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.btn-kategori {
+  display: flex;
+  background-color: #0b2558;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn-kategori img {
+  width: 20px;
+  float: left;
+  margin-right: 15px;
+}
+
+.item-produk .card-body .btn-link {
+  padding: 0px;
+  font-size: 14px;
+}
+
+.item-produk .card-body .slots {
+  color: #a0a4a8 !important;
+  margin: 10px 0;
+  font-weight: normal;
 }
 
 .filters .list-menus li {
@@ -135,6 +170,29 @@ ul.star li .fas {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 90px 180px;
+}
+
+.dateandmap .font-blog {
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.card-post .card-body {
+  background-color: #0b2558;
+}
+
+.card-post .card-body .card-title {
+  text-transform: none;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-top: 0;
+  color: white;
+  font-size: 15px;
+}
+
+.card-post .card-body .card-text {
+  color: white;
 }
 
 section.navigation {
@@ -154,19 +212,56 @@ section.navigation .nav-top .ul-medsos li a, section.navigation .nav-top .ul-aut
 
 section.navigation .list-icon-header li a {
   margin: 0 10px;
-  color: #357fef;
+  color: #0b2558;
   font-size: 20px;
+}
+
+.form-mobile {
+  width: 15%;
+  transition: width 0.4s ease-in-out;
+  float: right;
 }
 
 .form-mobile > input {
   border-radius: 14px;
-  border-right: none;
+  border-right-color: transparent;
+  border-color: transparent;
+  padding-right: 35px;
+  font-size: 14px;
+  height: 38px;
+}
+
+.form-mobile > input:focus {
+  box-shadow: none;
+  border-color: #0b2558 !important;
+}
+
+.form-mobile > .input-group-append {
+  position: absolute;
+  top: 0px;
+  height: 38px;
+  right: 0;
+  border-color: transparent;
 }
 
 .form-mobile > .input-group-append span {
   border-radius: 14px;
+  border: none;
+  background-color: white;
+}
+
+.w-78 {
+  width: 78% !important;
+}
+
+.w-78 input {
+  border-color: #ced4da !important;
+  border-right-color: #ced4da;
+}
+
+.w-78 > .input-group-append span {
   background-color: transparent;
-  border-left: none;
+  z-index: 99;
 }
 
 .mobile > .list-icon-header li a {

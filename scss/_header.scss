@@ -12,20 +12,53 @@ section.navigation {
     }
     .list-icon-header li a{
         margin: 0 10px;
-        color: #357fef;
+        color: #0b2558;
         font-size: 20px;
     }
 }
 
 .form-mobile {
+    width: 15%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float: right;
     >input {
         border-radius: 14px;
-        border-right: none;
+        border-right-color: transparent;
+        border-color: transparent;
+        padding-right: 35px;
+        font-size: 14px;
+        height: 38px;
+        &:focus {
+            box-shadow: none;
+            border-color: #0b2558 !important;
+        }
     }
-    >.input-group-append span{
-        border-radius: 14px;
-        background-color: transparent;
-        border-left: none;
+    >.input-group-append {
+        position: absolute;
+        top: 0px;
+        height: 38px;
+        right: 0;
+        border-color: transparent;
+        span{
+            border-radius: 14px;
+            border: none;
+            background-color: white;
+        }
+    }
+}
+
+.w-78 {
+    width: 78% !important;
+    input {
+        border-color: #ced4da !important;
+        border-right-color: #ced4da;
+    }
+    >.input-group-append {
+        span {
+            background-color: transparent;
+            z-index: 99;
+        }
     }
 }
 

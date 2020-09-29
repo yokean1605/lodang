@@ -1,47 +1,35 @@
 (function($) {
-  "use strict"; // Start of use strict
-  $('.scrollable').slick({
-    dots: false,
-    swipe: true,
-    arrows: true,
-    infinite: false,
-    variableWidth: true,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  });
+	"use strict"; // Start of use strict
 
-  $('.scrollable').on('afterChange', function(event, slick, currentSlide) {
+	// klikc show search mobile
+	$('.input-group-text').on('click', function() {
+		$('.form-mobile').toggleClass('w-78');
+	});
 
-    if (currentSlide === 2) {
-      $('.slick-next').addClass('hidden');
-    } else {
-      $('.slick-next').removeClass('hidden');
-    }
+	// slick slider
+	$('.scrollable').slick({
+		dots: false,
+		swipe: true,
+		arrows: true,
+		infinite: false,
+		variableWidth: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
 
-    if (currentSlide === 0) {
-      $('.slick-prev').addClass('hidden');
-    } else {
-      $('.slick-prev').removeClass('hidden');
-    }
-  })
+	$('.scrollable').on('afterChange', function(event, slick, currentSlide) {
 
-  $('.filters ul li').on('click', function () {
-    $('.filters ul li').removeClass('active');
-    $(this).addClass('active');
+		if (currentSlide === 2) {
+		$('.slick-next').addClass('hidden');
+		} else {
+		$('.slick-next').removeClass('hidden');
+		}
 
-    var data = $(this).attr('data-filter');
-    $grid.isotope({
-        filter: data
-    })
-});
-
-var $grid = $(".grid").isotope({
-    itemSelector: ".all",
-    percentPosition: true,
-    masonry: {
-        columnWidth: ".all"
-    }
-})
-
+		if (currentSlide === 0) {
+		$('.slick-prev').addClass('hidden');
+		} else {
+		$('.slick-prev').removeClass('hidden');
+		}
+	});
 
 })(jQuery); // End of use strict

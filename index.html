@@ -5,6 +5,7 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 		<!-- font awesome -->
 		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -19,7 +20,10 @@
 		<link rel="stylesheet" href="css/loadang.min.css">
 	</head>
 	<body>
+
+		<!-- header menus seacrh -->
 		<section class="navigation fixed-top">
+			<!-- nav top -->
 			<div class="nav-top py-1">
 				<div class="container">
 					<div class="row">
@@ -29,11 +33,6 @@
 								<li class="list-inline-item">
 									<a href="" class="icon-shoping">
 										<i class="fas fa-heart"></i>
-									</a>
-								</li>
-								<li class="list-inline-item">
-									<a href="" class="icon-shoping">
-										<i class="fas fa-shopping-cart"></i>
 									</a>
 								</li>
 								<li class="list-inline-item">
@@ -83,6 +82,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- nav bottom -->
 			<nav class="nav-bottom py-3">
 				<div class="container">
 					<div class="row no-gutters">
@@ -104,11 +104,21 @@
 							</div>
 							<!-- mobile -->
 							<form action="" class="d-sm-none d-block">
+								
+								<ul class="list-inline mb-0 list-icon-header text-right d-flex my-1 float-right">
+									<li class="list-inline-item">
+										<a href="" class="icon-shoping">
+											<i class="fas fa-shopping-cart"></i>
+										</a>
+									</li>
+								</ul>
+
 								<div class="input-group md-form form-sm form-2 pl-0 form-mobile">
 									<input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Cari disini">
 									<div class="input-group-append bg-transparent">
-										<span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
-											aria-hidden="true"></i></span>
+										<span class="input-group-text red lighten-3" id="basic-text1">
+											<i class="fas fa-search text-grey" aria-hidden="true"></i>
+										</span>
 									</div>
 								</div>
 							</form>
@@ -160,38 +170,55 @@
 						</div>
 					</div>
 				</div>
-				<!-- banner -->
-				<div class="mt-5 kategori-pilihan">
+
+				<!-- menus -->
+				<div class="mt-5 menus">
 					<div class="banner-slider my-3 scrollable">
-						<a href="" class="btn btn-kategori m-3 mb-4 shadow p-4 active">
-							All
-							<br>
-							Kategori
-							<img src="images/food.svg" alt="" class="img-fluid">
-						</a>
-						<a href="" class="btn btn-kategori m-3 mb-4 shadow p-4">
+						<a href="" class="btn btn-menus m-3 mb-4 shadow p-4 active">
 							Loding
 							<br>
 							( Lombok Branding) 
-							<img src="images/food.svg" alt="" class="img-fluid">
+							<img src="images/lombok-branding.svg" alt="" class="img-fluid">
 						</a>
-						<a href="" class="btn btn-kategori m-3 mb-4 shadow p-4">
+						<a href="" class="btn btn-menus m-3 mb-4 shadow p-4">
 							Lowis 
 							<br>
 							(Lombok Berwisata)
 							<img src="images/drink.svg" alt="" class="img-fluid">
 						</a>
-						<a href="" class="btn btn-kategori m-3 mb-4 shadow p-4">
+						<a href="" class="btn btn-menus m-3 mb-4 shadow p-4">
 							Lombok
 							<br>
 							Bersosial
 							<img src="images/fast-food.svg" alt="" class="img-fluid">
 						</a>
-						<a href="" class="btn btn-kategori m-3 mb-4 shadow p-4">
+						<a href="" class="btn btn-menus m-3 mb-4 shadow p-4">
 							Lombok
 							<br>
 							Update
 							<img src="images/fast-food.svg" alt="" class="img-fluid">
+						</a>
+					</div>
+				</div>
+
+				<!-- kategori -->
+				<div class="p-3 shadow mt-5 kategori-pilihan">
+					<div class="header-kategori d-flex">
+						<h5 class="mb-3">Kategori</h5>
+						<a href="" class="ml-auto">Semua Kategori</a>
+					</div>
+					<div class="banner-slider my-3 scrollable">
+						<a href="" class="btn btn-kategori m-2">
+							<img src="images/food.svg" alt="" class="img-fluid">
+							Makanan
+						</a>
+						<a href="" class="btn btn-kategori m-2">
+							<img src="images/drink.svg" alt="" class="img-fluid">
+							Minuman
+						</a>
+						<a href="" class="btn btn-kategori m-2">
+							<img src="images/fast-food.svg" alt="" class="img-fluid">
+							Fast Food
 						</a>
 					</div>
 				</div>
@@ -202,252 +229,135 @@
 		<section class="main my-5">
 			<div class="container">
 				<h3>Produk Dari Kami</h3>
-				<div class="filters text-center">
-					<ul class="list-menus list-inline">
-						<li class="list-inline-item" data-filter="*"></li>
-						<li class="list-inline-item active" data-filter=".dapur">Dapur</li>
-						<li class="list-inline-item" data-filter=".elektronik">Elektrik</li>
-						<li class="list-inline-item" data-filter=".bayi">Perlengkapan Bayi</li>
-						<li class="list-inline-item" data-filter=".kesehatan">Kesehatan</li>
-						<li class="list-inline-item" data-filter=".kecantikan">Kecantikan</li>
-						<!-- <li class="list-inline-item" data-filter=".group">GROUP</li> -->
-					</ul>
-				</div>
+				
 				<div class="row">
 					<div class="col-sm-3 col-6">
 						<div class="card mb-3 item-produk">
-							<img class="item-img" src="images/MYROTI Roti Tawar Funwari 380g.jpg" alt="Card image cap">
+							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="produk-title">MYROTI Roti Tawar Funwari 380g</h5>
-								<!-- star -->
-								<div class="d-flex mt-3">
-									<ul class="list-inline star">
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item org">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-									</ul>
-									<div class="rate">
-										<div class="count">
-											(90) <span>Rating</span>
-										</div>
-									</div>
-								</div>
-								<div class="d-flex border-top py-3">
-									<div class="text-danger"><span>Rp</span>200.000</div>
-									<div class="ml-auto">
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
+								<a href="" class="btn btn-link">Snack</a>
+								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+								<div class="slots">34 of 40 open slot</div>
+								<a href="" class="btn btn-price">Rp 3000</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-3 col-6">
 						<div class="card mb-3 item-produk">
-							<img class="item-img" src="images/MYROTI Roti Tawar Funwari 380g.jpg" alt="Card image cap">
+							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="produk-title">MYROTI Roti Tawar Funwari 380g</h5>
-								<!-- star -->
-								<div class="d-flex mt-3">
-									<ul class="list-inline star">
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item org">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-									</ul>
-									<div class="rate">
-										<div class="count">
-											(90) <span>Rating</span>
-										</div>
-									</div>
-								</div>
-								<div class="d-flex border-top py-3">
-									<div class="text-danger"><span>Rp</span>200.000</div>
-									<div class="ml-auto">
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
+								<a href="" class="btn btn-link">Snack</a>
+								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+								<div class="slots">34 of 40 open slot</div>
+								<a href="" class="btn btn-price">Rp 3000</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-3 col-6">
 						<div class="card mb-3 item-produk">
-							<img class="item-img" src="images/MYROTI Roti Tawar Funwari 380g.jpg" alt="Card image cap">
+							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="produk-title">MYROTI Roti Tawar Funwari 380g</h5>
-								<!-- star -->
-								<div class="d-flex mt-3">
-									<ul class="list-inline star">
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item org">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-									</ul>
-									<div class="rate">
-										<div class="count">
-											(90) <span>Rating</span>
-										</div>
-									</div>
-								</div>
-								<div class="d-flex border-top py-3">
-									<div class="text-danger"><span>Rp</span>200.000</div>
-									<div class="ml-auto">
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
+								<a href="" class="btn btn-link">Snack</a>
+								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+								<div class="slots">34 of 40 open slot</div>
+								<a href="" class="btn btn-price">Rp 3000</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-3 col-6">
 						<div class="card mb-3 item-produk">
-							<img class="item-img" src="images/MYROTI Roti Tawar Funwari 380g.jpg" alt="Card image cap">
+							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="produk-title">MYROTI Roti Tawar Funwari 380g</h5>
-								<!-- star -->
-								<div class="d-flex mt-3">
-									<ul class="list-inline star">
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item org">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-									</ul>
-									<div class="rate">
-										<div class="count">
-											(90) <span>Rating</span>
-										</div>
-									</div>
-								</div>
-								<div class="d-flex border-top py-3">
-									<div class="text-danger"><span>Rp</span>200.000</div>
-									<div class="ml-auto">
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
+								<a href="" class="btn btn-link">Snack</a>
+								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+								<div class="slots">34 of 40 open slot</div>
+								<a href="" class="btn btn-price">Rp 3000</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-3 col-6">
 						<div class="card mb-3 item-produk">
-							<img class="item-img" src="images/MYROTI Roti Tawar Funwari 380g.jpg" alt="Card image cap">
+							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="produk-title">MYROTI Roti Tawar Funwari 380g</h5>
-								<!-- star -->
-								<div class="d-flex mt-3">
-									<ul class="list-inline star">
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item org">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-									</ul>
-									<div class="rate">
-										<div class="count">
-											(90) <span>Rating</span>
-										</div>
-									</div>
-								</div>
-								<div class="d-flex border-top py-3">
-									<div class="text-danger"><span>Rp</span>200.000</div>
-									<div class="ml-auto">
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
+								<a href="" class="btn btn-link">Snack</a>
+								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+								<div class="slots">34 of 40 open slot</div>
+								<a href="" class="btn btn-price">Rp 3000</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-3 col-6">
 						<div class="card mb-3 item-produk">
-							<img class="item-img" src="images/MYROTI Roti Tawar Funwari 380g.jpg" alt="Card image cap">
+							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="produk-title">MYROTI Roti Tawar Funwari 380g</h5>
-								<!-- star -->
-								<div class="d-flex mt-3">
-									<ul class="list-inline star">
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item org">
-											<i class="fas fa-star org"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-										<li class="list-inline-item">
-											<i class="fas fa-star"></i>
-										</li>
-									</ul>
-									<div class="rate">
-										<div class="count">
-											(90) <span>Rating</span>
-										</div>
-									</div>
-								</div>
-								<div class="d-flex border-top py-3">
-									<div class="text-danger"><span>Rp</span>200.000</div>
-									<div class="ml-auto">
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
+								<a href="" class="btn btn-link">Snack</a>
+								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+								<div class="slots">34 of 40 open slot</div>
+								<a href="" class="btn btn-price">Rp 3000</a>
 							</div>
 						</div>
-					</div>		
+					</div>
+					<div class="col-sm-3 col-6">
+						<div class="card mb-3 item-produk">
+							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+							<div class="card-body">
+								<a href="" class="btn btn-link">Snack</a>
+								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+								<div class="slots">34 of 40 open slot</div>
+								<a href="" class="btn btn-price">Rp 3000</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-6">
+						<div class="card mb-3 item-produk">
+							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+							<div class="card-body">
+								<a href="" class="btn btn-link">Snack</a>
+								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+								<div class="slots">34 of 40 open slot</div>
+								<a href="" class="btn btn-price">Rp 3000</a>
+							</div>
+						</div>
+					</div>
+							
+				</div>
+			</div>
+		</section>
+
+		<!-- blogs -->
+		<section class="blog blog-bg my-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="title">
+							<div class="main-title">
+								<h2 class="text-center">Latest Blog</h2>
+							</div>
+							<div class="sub-title">
+								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam maiores beatae, reiciendis temporibus accusantium aut atque! At, laudantium harum natus quibusdam voluptate perferendis, distinctio nobis dolores corrupti aperiam quod quisquam!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card card-post shadow">
+							<img class="card-img-top" src="./images/blog-list-1.jpg" alt="">
+							<div class="card-body">
+								<div class="mb-3 dateandmap">
+									<div class="center-text d-flex">
+										<i class="fas fa-clock mr-2"></i>
+										<h6 class="mr-3 font-blog">June 19, 2019</h6>
+										<i class="fas fa-map-marker-alt mr-2"></i>
+										<h6 class="font-blog">Phonics</h6>
+									</div>
+								</div>
+								<h4 class="card-title">Twice profit than before you</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt?</p>
+								<a href="btn-readmore my-3">READ MORE</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

@@ -1,6 +1,7 @@
 body {
   font-size: 0.875rem;
   font-family: 'Poppins', sans-serif;
+  background-color: #f7f8fb;
 }
 p {
   line-height: 1.5;
@@ -25,12 +26,15 @@ h6 {
 }
 
 .item-produk {
-  border-radius: 8px;
+  border-radius: 30px;
   box-shadow: 0 3.2px 7.2px 0 rgba(0, 0, 0, 0.13);
   >.item-img {
     width: 100%;
     height: 190px;
-    object-fit: contain;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    // object-fit: contain;
+    object-fit: cover;
     margin-bottom: 15px;
   }
   >.card-body {
@@ -87,12 +91,12 @@ ul.star {
   box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px 0px;
 }
 
-.btn-kategori {
+.btn-menus {
   transition: all 0.3s ease-in-out !important;
   background-size: 300% 100% !important;
   color: white;
   border-radius: 8px;
-  border: 1px solid #4e56f3;
+  // border: 1px solid #4e56f3;
   color: #4e56f3;
   min-width: 200px;
   &.active, &:hover {
@@ -109,6 +113,41 @@ ul.star {
 
 }
 
+.btn-price {
+  color: white;
+  background-color: #4e56f3 !important;
+  background-image: linear-gradient(to right, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.btn-kategori {
+  display: flex;
+  background-color: #0b2558;
+  color: white;
+  border-radius: 8px;
+  img {
+    width: 20px;
+    float: left;
+    margin-right: 15px;
+  }
+}
+
+.item-produk {
+  .card-body {
+    .btn-link {
+      padding: 0px;
+      font-size: 14px;
+    }
+    .slots {
+      color: #a0a4a8!important;
+      margin: 10px 0;
+      font-weight: normal;
+    }
+  }
+}
+
 .filters {
   .list-menus {
     li {
@@ -120,6 +159,30 @@ ul.star {
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: 90px 180px;
+    }
+  }
+}
+
+.dateandmap {
+  .font-blog {
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+.card-post {
+  .card-body {
+    background-color: #0b2558;
+    .card-title {
+      text-transform: none;
+      font-weight: 600;
+      margin-bottom: 10px;
+      padding-top: 0;
+      color: white;
+      font-size: 15px;
+    }
+    .card-text {
+      color: white;
     }
   }
 }
