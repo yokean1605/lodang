@@ -270,7 +270,7 @@ section.navigation .list-icon-header li a {
 
 .form-mobile > input:focus {
   box-shadow: none;
-  border-color: #0b2558 !important;
+  border-color: #2ba3e2 !important;
 }
 
 .form-mobile > .input-group-append {
@@ -287,8 +287,12 @@ section.navigation .list-icon-header li a {
   background-color: white;
 }
 
+.form-mobile.input-group > .custom-select:not(:last-child), .form-mobile.input-group > .form-control:not(:last-child) {
+  border-radius: 14px;
+}
+
 .w-78 {
-  width: 78% !important;
+  width: 65% !important;
 }
 
 .w-78 input {

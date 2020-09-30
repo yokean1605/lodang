@@ -61,7 +61,7 @@ section.navigation {
         height: 38px;
         &:focus {
             box-shadow: none;
-            border-color: #0b2558 !important;
+            border-color: $c-utama2 !important;
         }
     }
     >.input-group-append {
@@ -76,10 +76,15 @@ section.navigation {
             background-color: white;
         }
     }
+
+    // border-right
+    &.input-group>.custom-select:not(:last-child), &.input-group>.form-control:not(:last-child) {
+        border-radius: 14px;
+    }
 }
 
 .w-78 {
-    width: 78% !important;
+    width: 65% !important;
     input {
         border-color: #ced4da !important;
         border-right-color: #ced4da;
