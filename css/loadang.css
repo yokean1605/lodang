@@ -378,6 +378,69 @@ section.navigation .list-icon-header li a {
   border-radius: 8px;
 }
 
+.carousel-item img {
+  border-radius: 8px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  min-height: 400px;
+}
+
+@media screen and (max-width: 425px) {
+  .carousel-item img {
+    -o-object-fit: fill;
+    object-fit: fill;
+    min-height: 200px;
+  }
+}
+
+.carousel-indicators {
+  justify-content: left;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  opacity: 1 !important;
+  transition: all .3s ease;
+}
+
+.carousel-indicators li.active {
+  background-color: #2ba3e2;
+  width: 20px;
+}
+
+.carousel-control-prev {
+  left: -5px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.carousel-control-next {
+  right: -5px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+  width: 30px;
+  height: 60px;
+  top: 40%;
+  background-color: white;
+  box-shadow: 0 2px 3px 0 rgba(153, 153, 153, 0.3);
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+  opacity: 1;
+}
+
+.carousel-control-next img, .carousel-control-prev img {
+  max-width: 25px;
+}
+
 .footer-top {
   background-image: linear-gradient(#0b2558, #05195c);
   padding: 70px 0;

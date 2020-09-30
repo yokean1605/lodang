@@ -165,3 +165,60 @@ section.navigation {
 .kategori-pilihan {
     border-radius: 8px;
 }
+
+.carousel-item {
+    img {
+        border-radius: 8px;
+        object-fit: cover;
+        min-height: 400px;
+    }
+    @media screen and(max-width:425px) {
+        img {
+            object-fit: fill;
+            min-height: 200px;
+        }
+    }
+}
+
+.carousel-indicators {
+    justify-content: left;
+    margin-right: 10%;
+    margin-left: 10%;
+    li {
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        opacity: 1 !important;
+        transition: all .3s ease;
+        &.active {
+            background-color: $c-utama2;
+            width: 20px;
+        }
+    }
+}
+
+.carousel-control-prev {
+    left: -5px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.carousel-control-next {
+    right: -5px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+    width: 30px;
+    height: 60px;
+    top: 40%;
+    background-color: white;
+    box-shadow: 0 2px 3px 0 hsla(0,0%,60%,.3);
+    &:hover {
+        opacity: 1;
+    }
+    img {
+        max-width: 25px;
+    }
+}
