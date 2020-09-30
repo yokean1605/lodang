@@ -30,13 +30,20 @@ p a {
   display: flex;
 }
 
+input:focus {
+  box-shadow: none !important;
+  border-color: #2ba3e2 !important;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-weight: 600;
+h6,
+a, input, span, div, label, button {
+  font-weight: 400;
+  letter-spacing: 1.3px;
 }
 
 .item-produk {
@@ -117,8 +124,8 @@ ul.star li .fas {
 
 .btn-menus.active, .btn-menus:hover {
   color: white;
-  background-color: #4e56f3 !important;
-  background-image: linear-gradient(to right, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
+  background-color: #0b2558 !important;
+  background-image: linear-gradient(to left, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
 }
 
 .btn-menus img {
@@ -201,18 +208,48 @@ section.navigation {
 }
 
 section.navigation .nav-top {
-  background-color: #ededed;
-  color: #817777 !important;
+  background-color: #f3f4f5;
+  color: #616b76;
+  border-bottom: 1px solid #f3f3f3;
   font-size: 12px;
 }
 
-section.navigation .nav-top .ul-medsos li a, section.navigation .nav-top .ul-auth li a {
-  color: #817777;
+section.navigation .ul-auth li:not(:last-child) {
+  border-right: solid 1px #d8d8d8;
+  padding-right: .6rem;
+}
+
+section.navigation .ul-auth li a {
+  font-size: 12px;
+  color: #616b76;
+  font-weight: 300;
+}
+
+section.navigation .ul-auth li a:hover {
+  color: #2ba3e2;
+  text-decoration: none;
+}
+
+section.navigation .ul-medsos {
+  line-height: 0px;
+}
+
+section.navigation .ul-medsos li {
+  line-height: 0px;
+}
+
+section.navigation .ul-medsos li a i {
+  color: #616b76;
+  font-size: 18px;
+}
+
+section.navigation .ul-medsos li a:hover i {
+  color: #2ba3e2;
 }
 
 section.navigation .list-icon-header li a {
   margin: 0 10px;
-  color: #0b2558;
+  color: #6C727C;
   font-size: 20px;
 }
 
@@ -280,14 +317,47 @@ section.navigation .list-icon-header li a {
 }
 
 .form-search-header .input-icon > input {
-  border-radius: 25px;
+  border-radius: 12px;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  height: 40px;
 }
 
 .form-search-header .input-icon i {
   position: absolute;
-  right: 25px;
-  top: 12px;
+  left: 15px;
+  top: 14px;
   background-color: white;
+  color: #0b2558;
+}
+
+.form-search-header > button {
+  width: 110px;
+  border-radius: 12px;
+  background-color: #2ba3e2;
+}
+
+.icon-shoping {
+  position: relative;
+}
+
+.icon-shoping .count-badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  padding: 0 5px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: #2ba3e2;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.navbar-nav {
+  max-width: 160px;
 }
 
 .icon-kategori {

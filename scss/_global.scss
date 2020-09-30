@@ -15,14 +15,22 @@ p {
   display: flex;
 }
 
+input {
+  &:focus {
+    box-shadow: none !important;
+    border-color: $c-utama2 !important;
+  }
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-weight: 600;
-  // @include sans-serif-font;
+h6,
+a, input, span, div, label, button {
+  font-weight: 400;
+  letter-spacing: 1.3px;
 }
 
 .item-produk {
@@ -101,8 +109,8 @@ ul.star {
   min-width: 200px;
   &.active, &:hover {
     color: white;
-    background-color: #4e56f3 !important;
-    background-image: linear-gradient(to right, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
+    background-color: $c-utama !important;
+    background-image: linear-gradient(to left, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
   }
   img {
     padding-top: 15px;

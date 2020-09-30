@@ -2,17 +2,47 @@ section.navigation {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
     background-color: #FFFFFF;
     .nav-top {
-        background-color: #ededed;
-        color: rgb(129, 119, 119)!important;
+        background-color: #f3f4f5;
+        color: $c-navtop;
+        border-bottom: 1px solid #f3f3f3;
         font-size: 12px;
-        .ul-medsos li a, .ul-auth li a{
-            color: $c-navtop;
-        }
         
+    }
+    .ul-auth li {
+        &:not(:last-child) {
+            border-right: solid 1px #d8d8d8;
+            padding-right: .6rem;
+        }
+        a {
+            font-size: 12px;
+            color: $c-navtop;
+            font-weight: 300;
+            &:hover {
+                color: $c-utama2;
+                text-decoration: none;
+            }
+        }
+    }
+    .ul-medsos {
+        line-height: 0px;
+        li {
+            line-height: 0px;
+            a{
+                i {
+                    color: $c-navtop;
+                    font-size: 18px;
+                }
+                &:hover {
+                    i {
+                        color: $c-utama2;
+                    }
+                }
+            }
+        }
     }
     .list-icon-header li a{
         margin: 0 10px;
-        color: #0b2558;
+        color: $icon;
         font-size: 20px;
     }
 }
@@ -76,15 +106,46 @@ section.navigation {
         display: flex;
         position: relative;
         >input {
-            border-radius: 25px;
+            border-radius: 12px;
+            padding-left: 40px;
+            font-weight: 400;
+            font-size: 14px;
+            height: 40px;
         }
         i {
             position: absolute;
-            right: 25px;
-            top: 12px;
+            left: 15px;
+            top: 14px;
             background-color: white;
+            color: $c-utama;
         }
     }
+    >button {
+        width: 110px;
+        border-radius: 12px;
+        background-color: $c-utama2;
+    }
+}
+
+.icon-shoping {
+    position: relative;
+    .count-badge {
+        position: absolute;
+        top: -8px;
+        right: -12px;
+        padding: 0 5px;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        background: $c-utama2;
+        color: #fff;
+        text-align: center;
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
+
+.navbar-nav {
+    max-width: 160px;
 }
 
 .icon-kategori {
