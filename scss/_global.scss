@@ -1,7 +1,7 @@
 body {
   font-size: 0.875rem;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f7f8fb;
+  font-family: 'Open Sans', sans-serif;
+  // background-color: #f7f8fb;
 }
 p {
   line-height: 1.5;
@@ -30,7 +30,7 @@ h5,
 h6,
 a, input, span, div, label, button {
   font-weight: 400;
-  letter-spacing: 1.3px;
+  // letter-spacing: 1.3px;
 }
 
 .item-produk {
@@ -44,15 +44,17 @@ a, input, span, div, label, button {
     // object-fit: contain;
     object-fit: cover;
     margin-bottom: 15px;
+    @media screen and(min-width: 426px) {
+      border-radius: 8px;
+    }
   }
   >.card-body {
     padding: 16px 16px 0 16px !important;
     h5.produk-title {
       line-height: 25px;
-      font-weight: 600;
+      font-weight: 800;
       font-size: 15px;
       color: black;
-
       cursor: pointer;
       height: 50px;
       display: -webkit-box;
@@ -60,7 +62,11 @@ a, input, span, div, label, button {
       text-overflow: ellipsis;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
+      font-size: 16px;
     }
+  }
+  @media screen and(min-width: 426px) {
+    border-radius: 8px;
   }
 }
 
@@ -106,7 +112,7 @@ ul.star {
   border-radius: 8px;
   color: white;
   background-color: $c-utama !important;
-  background-image: linear-gradient(to left, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
+  // background-image: linear-gradient(to left, #13b8ea, #4e56f3, #4e56f3, #13b8ea) !important;
   width: 100%;
   min-height: 140px;
   &:hover {
@@ -122,7 +128,14 @@ ul.star {
     margin: 0 auto;
     width: 50px;
   }
+}
 
+.main-title {
+  >h2 {
+    font-weight: 600;
+    color: $c-utama;
+    margin-bottom: 0;
+  }
 }
 
 .btn-price {
@@ -178,6 +191,7 @@ ul.star {
 }
 
 .dateandmap {
+  color: white;
   .font-blog {
     color: white;
     font-weight: 400;
@@ -185,27 +199,65 @@ ul.star {
   }
 }
 .card-post {
+  border-radius: 8px;
   .card-body {
     background-color: #0b2558;
     .card-title {
       text-transform: none;
       font-weight: 600;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       padding-top: 0;
       color: white;
       font-size: 15px;
+      display: -webkit-box;
+      overflow: hidden;
+      height: 35px;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
     }
     .card-text {
+      display: block;
       color: white;
+      font-weight: 300;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.slick-slider {
+  &:hover {
+    >button {
+      opacity: 1;
     }
   }
 }
 
 .slick-prev {
   left: -15px;
+  &::before {
+    content: "\f053";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 14px;
+    position: relative;
+    right: 2px;
+    opacity: 1 !important;
+
+  }
 }
 .slick-next {
   right: -15px;
+  &::before {
+    content: "\f054";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 14px;
+    position: relative;
+    left: 2px;
+    opacity: 1 !important;
+  }
 }
 
 .slick-prev, .slick-next {
@@ -219,8 +271,63 @@ ul.star {
   transform: translate(-32%, -50%);
   height: 40px;
   width: 40px;
+  opacity: 0;
   &::before {
     color: $c-utama2 !important;
     z-index: 999;
   }
+  &:focus, &:hover {
+    background: white !important;
+  }
+}
+
+.btn-semua {
+  padding: 6px 18px;
+  font-size: 12px;
+  font-weight: 400;
+  // color: #ed1c24;
+  color: $c-utama2;
+  border-radius: 15px;
+  text-decoration: none!important;
+  background-color: #f6f6f6;
+  border: 1px solid #ced4da;
+}
+
+.btn-produk {
+  background-image: linear-gradient(to right, #1f357d, #04185b, #04185b, #1f357d);
+  background-size: 300% 100%;
+  border: transparent;
+  position: relative;
+  background-color: #04185b;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  margin: 0 auto;
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 600;
+  &:hover, &:focus {
+    transition: all 0.4s ease-in-out;
+    color: #fff !important;
+    background-position: 100% 0;
+  }
+}
+
+.btn-readmore {
+  color: white;
+  border-radius: 18px;
+  border: 2px solid white;
+  font-size: 14px;
+  padding: 8px 20px;
+  transition: 0.5s;
+  display: inline-block;
+  &:hover {
+    color: $c-utama;
+    background-color: white;
+    text-decoration: none;
+  }
+}
+
+.blog-bg {
+  background-color: #fafafa;
 }

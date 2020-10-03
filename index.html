@@ -7,10 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 		<!-- font awesome -->
-		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
 		 <!-- Add the slick-theme.css if you want default styling -->
 		 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 		 <!-- Add the slick-theme.css if you want default styling -->
@@ -181,14 +178,11 @@
 					</a>
 				</div>
 
-				
-				<!-- kategori -->
-				<div class="p-3 shadow mt-5 kategori-pilihan">
-					<!-- menus -->
+				<!-- menu -->
+				<div class="p-3 shadow rounded mt-3">
 					<div class="menus-btm-slider">
-						<h5 class="mb-4">Menu Untukmu</h5>
 						<div class="row">
-							<div class="col-3">
+							<div class="col-6 col-sm-3 mb-3 mb-sm-0">
 								<a href="" class="btn btn-menus shadow active">
 									Loding
 									<br>
@@ -196,7 +190,7 @@
 									<img src="images/lombok-branding.svg" alt="" class="img-fluid">
 								</a>
 							</div>
-							<div class="col-3">
+							<div class="col-6 col-sm-3 mb-3 mb-sm-0">
 								<a href="" class="btn btn-menus shadow">
 									Lowis 
 									<br>
@@ -204,7 +198,7 @@
 									<img src="images/drink.svg" alt="" class="img-fluid">
 								</a>
 							</div>
-							<div class="col-3">
+							<div class="col-6 col-sm-3 mb-3 mb-sm-0">
 								<a href="" class="btn btn-menus shadow">
 									Lombok
 									<br>
@@ -212,7 +206,7 @@
 									<img src="images/fast-food.svg" alt="" class="img-fluid">
 								</a>
 							</div>
-							<div class="col-3">
+							<div class="col-6 col-sm-3 mb-3 mb-sm-0">
 								<a href="" class="btn btn-menus shadow">
 									Lombok
 									<br>
@@ -222,11 +216,15 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="header-kategori d-flex mt-5">
-						<h5 class="mb-3">Kategori</h5>
-						<a href="" class="ml-auto">Semua Kategori</a>
-					</div> -->
-					<div class="banner-slider mt-5 scrollable">
+				</div>
+				
+				<!-- kategori -->
+				<div class="p-3 shadow mt-3 kategori-pilihan">
+					<div class="header-kategori d-flex mb-3 ">
+						<h4 class="font-weight-bold mb-0">Kategori</h4>
+						<a href="" class="ml-auto btn-semua">Semua Kategori</a>
+					</div>
+					<div class="banner-slider scrollable">
 						<a href="" class="btn btn-kategori m-2">
 							<img src="images/food.svg" alt="" class="img-fluid">
 							Makanan
@@ -251,7 +249,10 @@
 		<!-- main -->
 		<section class="main my-5">
 			<div class="container">
-				<h3>Produk Dari Kami</h3>
+				<div class="d-flex mb-3">
+					<h4 class="font-weight-bold mb-0">Produk Dari Kami</h4>
+					<a href="" class="ml-auto btn-semua">Lihat Semua</a>
+				</div>
 				
 				<div class="row">
 					<div class="col-sm-3 col-6">
@@ -261,7 +262,18 @@
 								<a href="" class="btn btn-link">Snack</a>
 								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
 								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-price">Rp 3000</a>
+								<a href="" class="btn btn-produk ">Rp 3000</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-6">
+						<div class="card mb-3 item-produk">
+							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+							<div class="card-body">
+								<a href="" class="btn btn-link">Snack</a>
+								<h5 class="produk-title">Kube Pojok Desa Jerowaru satu</h5>
+								<div class="slots">34 of 40 open slot</div>
+								<a href="" class="btn btn-produk ">Rp 3000</a>
 							</div>
 						</div>
 					</div>
@@ -272,7 +284,7 @@
 								<a href="" class="btn btn-link">Snack</a>
 								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
 								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-price">Rp 3000</a>
+								<a href="" class="btn btn-produk ">Rp 3000</a>
 							</div>
 						</div>
 					</div>
@@ -283,7 +295,7 @@
 								<a href="" class="btn btn-link">Snack</a>
 								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
 								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-price">Rp 3000</a>
+								<a href="" class="btn btn-produk ">Rp 3000</a>
 							</div>
 						</div>
 					</div>
@@ -294,7 +306,7 @@
 								<a href="" class="btn btn-link">Snack</a>
 								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
 								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-price">Rp 3000</a>
+								<a href="" class="btn btn-produk ">Rp 3000</a>
 							</div>
 						</div>
 					</div>
@@ -305,7 +317,7 @@
 								<a href="" class="btn btn-link">Snack</a>
 								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
 								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-price">Rp 3000</a>
+								<a href="" class="btn btn-produk ">Rp 3000</a>
 							</div>
 						</div>
 					</div>
@@ -316,7 +328,7 @@
 								<a href="" class="btn btn-link">Snack</a>
 								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
 								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-price">Rp 3000</a>
+								<a href="" class="btn btn-produk ">Rp 3000</a>
 							</div>
 						</div>
 					</div>
@@ -325,20 +337,9 @@
 							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
 							<div class="card-body">
 								<a href="" class="btn btn-link">Snack</a>
-								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+								<h5 class="produk-title">Kube Pojok Desa Jerowaru dua belas</h5>
 								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-price">Rp 3000</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-6">
-						<div class="card mb-3 item-produk">
-							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
-							<div class="card-body">
-								<a href="" class="btn btn-link">Snack</a>
-								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
-								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-price">Rp 3000</a>
+								<a href="" class="btn btn-produk ">Rp 3000</a>
 							</div>
 						</div>
 					</div>
@@ -348,16 +349,16 @@
 		</section>
 
 		<!-- blogs -->
-		<section class="blog blog-bg my-5">
+		<section class="blog blog-bg my-5 pt-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<div class="title">
+						<div class="title mb-5">
 							<div class="main-title">
 								<h2 class="text-center">Latest Blog</h2>
 							</div>
 							<div class="sub-title">
-								<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam maiores beatae, reiciendis temporibus accusantium aut atque! At, laudantium harum natus quibusdam voluptate perferendis, distinctio nobis dolores corrupti aperiam quod quisquam!</p>
+								<p class="text-center my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quibusdam maiores beatae, reiciendis temporibus accusantium aut atque! At, laudantium harum natus quibusdam voluptate perferendis, distinctio nobis dolores corrupti aperiam quod quisquam!</p>
 							</div>
 						</div>
 					</div>
@@ -375,9 +376,45 @@
 										<h6 class="font-blog">Phonics</h6>
 									</div>
 								</div>
+								<h4 class="card-title">Twice profit than before you and you can do it</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt?</p>
+								<a href="" class="btn-readmore">READ MORE</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card card-post shadow">
+							<img class="card-img-top" src="./images/blog-list-1.jpg" alt="">
+							<div class="card-body">
+								<div class="mb-3 dateandmap">
+									<div class="center-text d-flex">
+										<i class="fas fa-clock mr-2"></i>
+										<h6 class="mr-3 font-blog">June 19, 2019</h6>
+										<i class="fas fa-map-marker-alt mr-2"></i>
+										<h6 class="font-blog">Phonics</h6>
+									</div>
+								</div>
 								<h4 class="card-title">Twice profit than before you</h4>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt?</p>
-								<a href="btn-readmore my-3">READ MORE</a>
+								<a href="" class="btn-readmore">READ MORE</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card card-post shadow">
+							<img class="card-img-top" src="./images/blog-list-1.jpg" alt="">
+							<div class="card-body">
+								<div class="mb-3 dateandmap">
+									<div class="center-text d-flex">
+										<i class="fas fa-clock mr-2"></i>
+										<h6 class="mr-3 font-blog">June 19, 2019</h6>
+										<i class="fas fa-map-marker-alt mr-2"></i>
+										<h6 class="font-blog">Phonics</h6>
+									</div>
+								</div>
+								<h4 class="card-title">Twice profit than before you</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nesciunt?</p>
+								<a href="" class="btn-readmore">READ MORE</a>
 							</div>
 						</div>
 					</div>

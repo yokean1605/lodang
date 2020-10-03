@@ -126,9 +126,11 @@ section.navigation {
         }
     }
     >button {
-        width: 110px;
-        border-radius: 12px;
-        background-color: $c-utama2;
+        width: 130px;
+        border-radius: 18px;
+        background-color: $c-utama;
+        border: none;
+        letter-spacing: 1.5px;
     }
 }
 
@@ -213,7 +215,7 @@ section.navigation {
     width: 30px;
     height: 60px;
     top: 40%;
-    background-color: #444;
+    background-color: white;
     box-shadow: 0 2px 3px 0 hsla(0,0%,60%,.3);
     &:hover {
         opacity: 1;
