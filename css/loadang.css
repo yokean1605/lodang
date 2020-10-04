@@ -51,25 +51,18 @@ a, input, span, div, label, button {
 }
 
 .item-produk {
-  border-radius: 30px;
+  border-radius: 8px;
   box-shadow: 0 3.2px 7.2px 0 rgba(0, 0, 0, 0.13);
 }
 
 .item-produk > .item-img {
   width: 100%;
   height: 190px;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   -o-object-fit: cover;
   object-fit: cover;
   margin-bottom: 15px;
-}
-
-@media screen and (min-width: 426px) {
-  .item-produk > .item-img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
 }
 
 .item-produk > .card-body {
@@ -89,12 +82,6 @@ a, input, span, div, label, button {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   font-size: 16px;
-}
-
-@media screen and (min-width: 426px) {
-  .item-produk {
-    border-radius: 8px;
-  }
 }
 
 ul.star li.list-inline-item:not(:last-child) {
@@ -168,6 +155,13 @@ ul.star li .fas {
 @media screen and (max-width: 768px) {
   .btn-menus div {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .btn-menus div {
+    font-size: 11px;
+    font-weight: 400;
   }
 }
 
