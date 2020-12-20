@@ -45,3 +45,29 @@
         }
     }
 }
+
+#scroll-top {
+    height: 40px;
+    position: fixed;
+    right: 15px;
+    width: 40px;
+    z-index: 9999;
+    bottom: 0;
+    background-color: #43494e;
+    text-align: center;
+    line-height: 1;
+    padding: 11px 0;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 0 0 0 0;
+    transition: all .3s, margin-right 0s;
+    transform: translateY(40px);
+    img {
+        width: 10px;
+    }
+    &.fixed {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}

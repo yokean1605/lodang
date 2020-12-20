@@ -64,7 +64,25 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery);
+
+  // nouislider
+  var nouislider = gulp.src([
+    './node_modules/nouislider/distribute/**',
+  ])
+  .pipe(gulp.dest('./vendor/nouislider'));
+
+  // owl
+  var owl = gulp.src([
+    './node_modules/owl.carousel/dist/**',
+  ])
+  .pipe(gulp.dest('./vendor/owl'));
+
+  // touchspin
+  var touchspin = gulp.src([
+    './node_modules/bootstrap-touchspin/dist/**',
+  ])
+  .pipe(gulp.dest('./vendor/touchSpin'));
+  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, nouislider, owl, touchspin);
 }
 
 // CSS task

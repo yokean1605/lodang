@@ -19,7 +19,7 @@
 	<body>
 
 		<!-- header menus seacrh -->
-		<section class="navigation fixed-top">
+		<section class="navigation">
 			<!-- nav top -->
 			<div class="nav-top py-2">
 				<div class="container">
@@ -148,207 +148,201 @@
 			</nav>
 		</section>
 
-		<!-- slider -->
-		<header class="mb-5" style="margin-top: 120px;">
-			<div class="container">
-				<!-- slider -->
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img class="d-block w-100" src="images/banner2.jpg" alt="First slide">
-						</div>
-						<div class="carousel-item">
-							<img class="d-block w-100" src="images/slider.png" alt="Second slide">
-						</div>
-						<div class="carousel-item">
-							<img class="d-block w-100" src="images/slider2.png" alt="Third slide">
-						</div>
-					</div>
-					<!-- arrow -->
-					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-						<img src="./images/left-arrow.svg" alt="" class="img-fluid">
-					</a>
-					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-						<img src="./images/right-arrow.svg" alt="" class="img-fluid">
-					</a>
-				</div>
-
-				<!-- menu -->
-				<div class="p-3 shadow rounded mt-3 menus">
-					<div class="menus-btm-slider">
-						<div class="row n-gutters">
-							<div class="col-3">
-								<a href="" class="btn btn-menus shadow active">
-									<div>
-										Loding
-										<br>
-										( Lombok Branding) 
-									</div>
-									<img src="images/lombok-branding.svg" alt="" class="img-fluid">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="" class="btn btn-menus shadow">
-									<div>
-										Lowis 
-										<br>
-										(Lombok Berwisata)
-									</div>
-									<img src="images/travel.svg" alt="images" class="img-fluid">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="" class="btn btn-menus shadow">
-									<div>
-										Lombok Bersosial
-									</div>
-									<img src="images/social.svg" alt="" class="img-fluid">
-								</a>
-							</div>
-							<div class="col-3">
-								<a href="" class="btn btn-menus shadow">
-									<div>
-										Lombok Update
-									</div>
-									<img src="images/report.svg" alt="" class="img-fluid">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- kategori -->
-				<div class="p-3 shadow mt-3 kategori-pilihan">
-					<div class="d-flex mb-3 ">
-						<h4 class="header-title font-weight-bold mb-0 my-auto">Kategori</h4>
-						<a href="" class="ml-auto btn-semua">Semua Kategori</a>
-					</div>
-					<div class="banner-slider scrollable">
-						<a href="" class="btn btn-kategori m-2">
-							<img src="images/food.svg" alt="" class="img-fluid">
-							<span>Makanan</span>
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							<img src="images/drink.svg" alt="" class="img-fluid">
-							<span>Minuman</span>
-						</a>
-						<a href="" class="btn btn-kategori m-2">
-							<img src="images/fast-food.svg" alt="" class="img-fluid">
-							<span>Fast Food</span>
-						</a>
-					</div>
-				</div>
-			</div>			
-		</header>
-
-		<div class="container">
-			<hr>
-		</div>
-
 		<!-- main -->
-		<section class="main my-5">
+		<section class="main">
+			<div class="banner mb-5">
+				<div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="breadcrumb-content">
+								<h1 class="breadcrumb-hrading">Shop Page</h1>
+								<nav aria-label="breadcrumb" class="d-flex align-items-center">
+									<ol class="breadcrumb mx-auto bg-transparent">
+										<li class="breadcrumb-item"><a href="#">Home</a></li>
+										<li class="breadcrumb-item active" aria-current="page">Shop List</li>
+									</ol>
+								</nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
 			<div class="container">
-				<div class="d-flex mb-3">
-					<h4 class="header-title font-weight-bold mb-0">Produk Dari Kami</h4>
-					<a href="" class="ml-auto btn-semua">Lihat Semua</a>
-				</div>
-				
 				<div class="row">
-					<div class="col-sm-3 col-6">
-						<div class="card mb-3 item-produk">
-							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
-							<div class="card-body">
-								<a href="" class="btn btn-link d-inline-block">Snack
-								</a>
-								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
-								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-produk ">Rp 3000</a>
+					<div class="col-sm-3">
+						<div class="card mb-3 rounded-0">
+							<div class="card-body card-sidebar">
+								<!-- categori -->
+								<h5>Categories</h5>
+								<form action="">
+									<ul class="list-inline cat-list">
+										<li class="list-inline">
+											<a href="">Categori 1</a>
+										</li>
+										<li class="list-inline">
+											<a href="">Categori 2</a>
+										</li>
+										<li class="list-inline">
+											<a href="">Categori 3</a>
+										</li>
+										<li class="list-inline">
+											<a href="">Categori 4</a>
+										</li>
+									</ul>
+								</form>
+							</div>
+						</div>
+
+						<!-- price -->
+						<div class="card rounded-0">
+							<div class="card-body card-sidebar">
+								<h5>Price</h5>
+								<div class="price-slider-wrapper">
+									<div id="price-slider"></div>
+								</div>
+								<div class="filter-price-action d-flex align-items-center justify-content-between flex-wrap mt-4">
+									<button type="submit" class="btn btn-danger btn-xs rounded-0">Filter</button>
+									<div class="filter-price-text">
+										Price:
+										<span id="filter-price-range"></span>
+									</div><!-- End .filter-price-text -->
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3 col-6">
-						<div class="card mb-3 item-produk">
-							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
-							<div class="card-body">
-								<a href="" class="btn btn-link">Snack</a>
-								<h5 class="produk-title">Kube Pojok Desa Jerowaru satu</h5>
-								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-produk ">Rp 3000</a>
+					<div class="col-sm-9">
+						<div class="row mb-3">
+							<div class="col-sm-6">
+								<form class="form-inline mt-sm-0 mt-3" action="">
+									<label for="email" class="mr-sm-2">Sort By :</label>
+									<select name="" id="" class="form-control form-sort">
+										<option value="">Default Shorting</option>
+										<option value="">Produk 2</option>
+										<option value="">Produk 3</option>
+									</select>
+								</form>
+							</div>
+							<div class="col-sm-6 text-right">
+								<ul class="list-inline">
+									<li class="list-inline-item">
+										<div class="form-inline mt-sm-0 mt-3">
+											<label for="" class="mr-sm-2">
+												Show :
+											</label>
+											<select class="form-control rounded-0" name="" id="">
+											  <option>5</option>
+											  <option>10</option>
+											  <option>50</option>
+											</select>
+										</div>
+									</li>
+									<li class="list-inline-item">
+										<a href="" class="form-control rounded-0">
+											<i class="fas fa-list"></i>
+										</a>
+									</li>
+									<li class="list-inline-item">
+										<a href="" class="form-control rounded-0">
+											<i class="fas fa-th"></i>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-3 col-6">
-						<div class="card mb-3 item-produk">
-							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
-							<div class="card-body">
-								<a href="" class="btn btn-link">Snack</a>
-								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
-								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-produk ">Rp 3000</a>
+
+						<div class="row">
+							<div class="col-sm-3 col-6">
+								<div class="card mb-3 item-produk">
+									<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+									<div class="card-body">
+										<a href="" class="btn btn-link d-inline-block">Snack
+										</a>
+										<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+										<div class="slots">34 of 40 open slot</div>
+										<a href="" class="btn btn-produk ">Rp 3000</a>
+									</div>
+								</div>
 							</div>
+							<div class="col-sm-3 col-6">
+								<div class="card mb-3 item-produk">
+									<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+									<div class="card-body">
+										<a href="" class="btn btn-link">Snack</a>
+										<h5 class="produk-title">Kube Pojok Desa Jerowaru satu</h5>
+										<div class="slots">34 of 40 open slot</div>
+										<a href="" class="btn btn-produk ">Rp 3000</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="card mb-3 item-produk">
+									<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+									<div class="card-body">
+										<a href="" class="btn btn-link">Snack</a>
+										<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+										<div class="slots">34 of 40 open slot</div>
+										<a href="" class="btn btn-produk ">Rp 3000</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="card mb-3 item-produk">
+									<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+									<div class="card-body">
+										<a href="" class="btn btn-link">Snack</a>
+										<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+										<div class="slots">34 of 40 open slot</div>
+										<a href="" class="btn btn-produk ">Rp 3000</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="card mb-3 item-produk">
+									<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+									<div class="card-body">
+										<a href="" class="btn btn-link">Snack</a>
+										<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+										<div class="slots">34 of 40 open slot</div>
+										<a href="" class="btn btn-produk ">Rp 3000</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="card mb-3 item-produk">
+									<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+									<div class="card-body">
+										<a href="" class="btn btn-link">Snack</a>
+										<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+										<div class="slots">34 of 40 open slot</div>
+										<a href="" class="btn btn-produk ">Rp 3000</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="card mb-3 item-produk">
+									<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+									<div class="card-body">
+										<a href="" class="btn btn-link">Snack</a>
+										<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
+										<div class="slots">34 of 40 open slot</div>
+										<a href="" class="btn btn-produk ">Rp 3000</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="card mb-3 item-produk">
+									<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
+									<div class="card-body">
+										<a href="" class="btn btn-link">Snack</a>
+										<h5 class="produk-title">Kube Pojok Desa Jerowaru dua belas</h5>
+										<div class="slots">34 of 40 open slot</div>
+										<a href="" class="btn btn-produk ">Rp 3000</a>
+									</div>
+								</div>
+							</div>
+									
 						</div>
 					</div>
-					<div class="col-sm-3 col-6">
-						<div class="card mb-3 item-produk">
-							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
-							<div class="card-body">
-								<a href="" class="btn btn-link">Snack</a>
-								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
-								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-produk ">Rp 3000</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-6">
-						<div class="card mb-3 item-produk">
-							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
-							<div class="card-body">
-								<a href="" class="btn btn-link">Snack</a>
-								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
-								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-produk ">Rp 3000</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-6">
-						<div class="card mb-3 item-produk">
-							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
-							<div class="card-body">
-								<a href="" class="btn btn-link">Snack</a>
-								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
-								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-produk ">Rp 3000</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-6">
-						<div class="card mb-3 item-produk">
-							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
-							<div class="card-body">
-								<a href="" class="btn btn-link">Snack</a>
-								<h5 class="produk-title">Kube Pojok Desa Jerowaru</h5>
-								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-produk ">Rp 3000</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-6">
-						<div class="card mb-3 item-produk">
-							<img class="item-img" src="./images/produk.jpg" alt="Card image cap">
-							<div class="card-body">
-								<a href="" class="btn btn-link">Snack</a>
-								<h5 class="produk-title">Kube Pojok Desa Jerowaru dua belas</h5>
-								<div class="slots">34 of 40 open slot</div>
-								<a href="" class="btn btn-produk ">Rp 3000</a>
-							</div>
-						</div>
-					</div>
-							
 				</div>
 			</div>
 		</section>
@@ -541,7 +535,7 @@
 			</div>
 		</footer>
 		<a id="scroll-top" href="#top" title="Top" class="">
-		<img src="./images/left-arrow.svg" alt="" class="img-fluid">
+			<img src="./images/arrow-top.svg" alt="" class="img-fluid">
 		</a>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -550,6 +544,7 @@
 		<script src="vendor/bootstrap/js/bootstrap.min.js" ></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+		<script src="vendor/nouislider/nouislider.min.js"></script>
 		<script src="js/lodang.min.js"></script>
 	</body>
 </html>
