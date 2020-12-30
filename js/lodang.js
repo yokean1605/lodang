@@ -103,3 +103,11 @@ $('.horizontal-quantity').TouchSpin({
 	initval: 1,
 	min: 1
 });
+
+$('.quantity-cart').TouchSpin({
+	verticalbuttons: false,
+	buttondown_class: 'btn btn-outline rounded-0 px-2',
+	buttonup_class: 'btn btn-outline rounded-0 px-2',
+	initval: 1,
+	min: 1
+});

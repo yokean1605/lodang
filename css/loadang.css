@@ -563,6 +563,22 @@ ul.star li .fas {
   font-size: 14px;
 }
 
+.product-thumbnail td {
+  vertical-align: middle;
+}
+
+.card-table-content table thead > tr th {
+  border-top: medium none;
+  color: #253237;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 21px 45px 22px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 section.navigation {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
   background-color: #FFFFFF;
